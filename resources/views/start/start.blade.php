@@ -8,6 +8,7 @@
                     <a type="button" class="btn btn-secondary" href="#two">Vue -> Blade</a>
                     <a type="button" class="btn btn-secondary" href="#three">Vue -> Blade</a>
                     <a type="button" class="btn btn-secondary" href="#four">Chart</a>
+                    <a type="button" class="btn btn-secondary" href="#five">Pie</a>
                 </div>
             </div>
         </div>
@@ -51,6 +52,16 @@
                             <div class="card-body" style="min-height: 720px;">
                                 <h2 class="text-center">#4 chart</h2>
                                 <chart-component></chart-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2" data-hash="4" id="five" style="display:block">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 720px;">
+                                <h2 class="text-center">#5 Pie</h2>
+                                <pie-component></pie-component>
                             </div>
                         </div>
                     </div>
