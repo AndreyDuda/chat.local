@@ -1,0 +1,2 @@
+Запустить redis
+docker exec -it redis_chat  /usr/local/bin/redis-cli

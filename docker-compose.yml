@@ -23,6 +23,7 @@ services:
       - ./:/var/www
     depends_on:
       - mysql
+      - redis
   php-cli:
     build:
       context: ./
@@ -32,6 +33,7 @@ services:
       - ./:/var/www
     depends_on:
       - mysql
+      - redis
   mysql:
     image: mysql:5.7
     container_name: mysql_chat
@@ -46,3 +48,9 @@ services:
       - "MYSQL_USER=$DB_USERNAME"
       - "MYSQL_PASSWORD=$DB_PASSWORD"
       - "MYSQL_DATABASE=$DB_DATABASE"
+
+  redis:
+    image: redis:3.0
+    container_name: redis_chat
+    ports:
+      - "6379:6379"
