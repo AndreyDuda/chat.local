@@ -7,6 +7,7 @@
                     <a type="button" class="btn btn-secondary" href="#one">Example Component</a>
                     <a type="button" class="btn btn-secondary" href="#two">Vue -> Blade</a>
                     <a type="button" class="btn btn-secondary" href="#three">Vue -> Blade</a>
+                    <a type="button" class="btn btn-secondary" href="#four">Chart</a>
                 </div>
             </div>
         </div>
@@ -28,7 +29,7 @@
                     <div class="col-md-12">
                         <div class="card">
                             <div class="card-body" style="min-height: 720px;">
-                                <h2 class="text-center">#2 передача дфнных в Vue из Blade</h2>
+                                <h2 class="text-center">#2 передача данных в Vue из Blade</h2>
                                 <prop-component :urldata="{{json_encode($url_data)}}"></prop-component>
                             </div>
                         </div>
@@ -40,6 +41,16 @@
                             <div class="card-body" style="min-height: 720px;">
                                 <h2 class="text-center">#3 Ajax</h2>
                                 <ajax-component></ajax-component>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row m-2" data-hash="4" id="four" style="display:block">
+                    <div class="col-md-12">
+                        <div class="card">
+                            <div class="card-body" style="min-height: 720px;">
+                                <h2 class="text-center">#4 chart</h2>
+                                <chart-component></chart-component>
                             </div>
                         </div>
                     </div>
