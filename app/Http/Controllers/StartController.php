@@ -54,4 +54,23 @@ class StartController extends Controller
         ];
     }
 
+    public function chartRandom()
+    {
+        return [
+            'labels' => ['март', 'апрель', 'май', 'июнь'],
+            'datasets' => array(
+                [
+                    'label'           => 'Золото',
+                    'backgroundColor' => ['#16AB39'],
+                    'data'            => [rand(0,40000), rand(0,40000), rand(0,40000), rand(0,40000)],
+                ],
+                [
+                    'label'           => 'Серебро',
+                    'backgroundColor' => ['#B5CC18'],
+                    'data'            => [rand(0,40000), rand(0,40000), rand(0,40000), rand(0,40000)],
+                ]
+            )
+        ];
+    }
+
 }

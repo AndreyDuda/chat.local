@@ -20,6 +20,7 @@ Vue.component('prop-component', require('./components/PropComponent.vue'));
 Vue.component('ajax-component', require('./components/AjaxComponent.vue'));
 Vue.component('chart-component', require('./components/ChartLineComponent.vue'));
 Vue.component('pie-component', require('./components/ChartPieComponent.vue'));
+Vue.component('random-component', require('./components/ChartRandomComponent.vue'));
 
 const app = new Vue({
     el: '#app'
