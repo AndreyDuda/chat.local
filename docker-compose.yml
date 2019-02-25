@@ -54,3 +54,11 @@ services:
     container_name: redis_chat
     ports:
       - "6379:6379"
+  node:
+    container_name: node
+    build:
+      context: ./
+      dockerfile: docker/node.docker
+    volumes:
+      - ./:/var/www
+    tty: true
